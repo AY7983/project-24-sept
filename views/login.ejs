@@ -1,0 +1,71 @@
+<%- include('./base/header.ejs') %>
+
+  <div class="container" >
+    <div class="main-box ">
+      <div class="row">
+        <div class="col-md-6 form-border ">
+
+          <!-- login page start -->
+          <form action="/login" method="post">
+            <div class="mb-5">
+              <h3 class="text-center " style="color: red;font-weight: 600;"><img src="/image/logo-removebg-preview.png"
+                  alt="" height="80vh"> <br> Hi, Welcome Back!<span style='font-size:40px;'>&#128075;</span> </h3>
+
+            </div>
+            <div class="mb-4">
+              <label for="username" class="username">Username:</label>
+              <input type="text" class="form-control" id="Username" name="username" aria-describedby="emailHelp"
+                placeholder="Enter Username">
+
+            </div>
+            <div class="mb-4">
+              <label for="password" class="password">Password:</label>
+
+              <input type="password" class="form-control" id="password" name="password" aria-describedby="password"
+                placeholder="Enter Password">
+
+            </div>
+            <div class="mb-4">
+
+             <input type = "submit"  value="login" class="btn btn-warning w-75 my-3">
+ 
+            </div>
+
+          </form>
+          <div class="mb-4 ">
+
+            <h5>Don't have an account? <a href="/signup">Sign UP Now</a> </h5>
+
+          </div>
+
+
+          <!-- login page end -->
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="background-image">
+
+            <div class="background-opacity">
+
+              <div class="container red-box-content">
+                <h2> Don't Have an Account </h2> <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, corrupti inventore! Possimus
+                  facilis assumenda necessitatibus quia nesciunt repellat qui quas.</p>
+
+                   <a href="/signup" class="btn btn-danger" style="background-color: black;border: 4px solid white;" > <b> Signup</b></a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <%- include('./base/footer.ejs') %>

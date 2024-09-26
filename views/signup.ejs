@@ -1,0 +1,60 @@
+<%- include('./base/header.ejs') %>
+
+<div class="main" style="margin-top: 10vh;" >
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 p-4" style="box-shadow: 3px 5px 7px 1px black;background-color: white;margin-bottom: 15px;" >
+      <h1 class="text-center" style="color: red;">Create an account</h1>
+      <form action="/signup/submit" method="post" >
+        <div class="mb-2">
+          <label>Firstname:</label>
+          <input type="text" class="form-control"  name="firstname" placeholder="Enter Firstname" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-2">
+          <label>Lastname:</label>
+          <input type="text" class="form-control"  name="lastname" placeholder="Enter Lastname" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-2">
+          <label>Mobile Number:</label>
+          <input type="text" class="form-control"  name="mobileno" placeholder="Enter Mobileno" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-2">
+          <label>Country Code:</label>
+          <input type="text" class="form-control"  name="countrycode" placeholder=" Enter Countrycode" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-2">
+        <label>AadharCardno:</label>
+        <input type="text" class="form-control"  name="aadharCardno" placeholder="Enter AadharCardNo" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-2">
+      <label>Email:</label>
+      <input type="text" class="form-control"  name="email" placeholder="Enter Email" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-2">
+    <label>Password:</label>
+    <input type="text" class="form-control" name="password" placeholder="Enter Password" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-4 ">
+    <input type="submit" class="form-control btn btn-danger" value="Signup">
+  
+  </div>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./base/footer.ejs') %>
